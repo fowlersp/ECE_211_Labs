@@ -1,0 +1,22 @@
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav

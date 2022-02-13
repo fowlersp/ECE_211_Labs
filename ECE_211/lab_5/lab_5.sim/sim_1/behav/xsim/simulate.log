@@ -1,0 +1,5 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+starting up testbench...
+        12 tests completed with          0 errors
+$stop called at time : 135 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv" Line 99

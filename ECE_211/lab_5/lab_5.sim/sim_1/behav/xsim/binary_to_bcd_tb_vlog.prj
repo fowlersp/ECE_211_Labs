@@ -1,0 +1,11 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Simulation/add3.sv" \
+"../../../../RTL/binary_to_bcd.sv" \
+"../../../../Simulation/binary_to_bcd_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

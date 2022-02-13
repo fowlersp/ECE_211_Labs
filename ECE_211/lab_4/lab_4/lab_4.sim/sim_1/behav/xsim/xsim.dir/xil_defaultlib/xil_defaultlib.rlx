@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/horowitj/Documents/lab_4/Simulation/dec_3_8_tb.sv,1599420364,systemVerilog,,,,dec_3_8_tb,,uvm,,,,,,
+C:/Users/horowitj/Documents/lab_4/lab_4.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/horowitj/Documents/lab_4/lab_4.srcs/sim_1/new/sevenseg_hex_tb.sv,1632839782,systemVerilog,,,,sevenseg_hex_tb,,uvm,,,,,,
+C:/Users/horowitj/Documents/lab_4/lab_4.srcs/sources_1/new/dec_3_8.sv,1632834051,systemVerilog,,C:/Users/horowitj/Documents/lab_4/Simulation/dec_3_8_tb.sv,,dec_3_8,,uvm,,,,,,
+C:/Users/horowitj/Documents/lab_4/lab_4.srcs/sources_1/new/sevenseg_hex.sv,1632839121,systemVerilog,,C:/Users/horowitj/Documents/lab_4/lab_4.srcs/sim_1/new/sevenseg_hex_tb.sv,,sevenseg_hex,,uvm,,,,,,

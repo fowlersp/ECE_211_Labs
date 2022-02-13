@@ -1,0 +1,158 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 19 07:53:55 2021
+# Process ID: 5616
+# Current directory: C:/Users/horowitj/Documents/Lab_6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent6296 C:\Users\horowitj\Documents\Lab_6\Lab_6.xpr
+# Log file: C:/Users/horowitj/Documents/Lab_6/vivado.log
+# Journal file: C:/Users/horowitj/Documents/Lab_6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/horowitj/Documents/Lab_6/Lab_6.xpr
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source mux4p_tb.tcl
+add_bp {C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv} 27
+add_bp {C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv} 28
+add_bp {C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv} 29
+remove_bps -file {C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv} -line 29
+remove_bps -file {C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv} -line 28
+remove_bps -file {C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv} -line 27
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source mux4p_tb.tcl
+close_sim
+close [ open C:/Users/horowitj/Documents/Lab_6/RTL/alu.sv w ]
+add_files C:/Users/horowitj/Documents/Lab_6/RTL/alu.sv
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/horowitj/Documents/Lab_6/Simulation/alu_tb.sv w ]
+add_files -fileset sim_1 C:/Users/horowitj/Documents/Lab_6/Simulation/alu_tb.sv
+update_compile_order -fileset sim_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source mux4p_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source mux4p_tb.tcl
+set_property top alu [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+close [ open C:/Users/horowitj/Documents/Lab_6/Simulation/alu_tb.tv w ]
+add_files C:/Users/horowitj/Documents/Lab_6/Simulation/alu_tb.tv
+set_property file_type {Memory File} [get_files  C:/Users/horowitj/Documents/Lab_6/Simulation/alu_tb.tv]
+launch_simulation
+source mux4p_tb.tcl
+set_property top alu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+launch_simulation
+source alu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+close [ open C:/Users/horowitj/Documents/Lab_6/RTL/alu_s.sv w ]
+add_files C:/Users/horowitj/Documents/Lab_6/RTL/alu_s.sv
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/horowitj/Documents/Lab_6/Simulation/alu_s_tb.sv w ]
+add_files -fileset sim_1 C:/Users/horowitj/Documents/Lab_6/Simulation/alu_s_tb.sv
+update_compile_order -fileset sim_1
+set_property top alu_s_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+set_property top alu_s [current_fileset]
+update_compile_order -fileset sources_1
+set_property top alu_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source alu_tb.tcl
+close_sim
+launch_simulation
+source alu_tb.tcl
+close_sim
+set_property top alu_s_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+set_property top alu_s [current_fileset]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source alu_s_tb.tcl
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+set_property top alu [current_fileset]
+update_compile_order -fileset sources_1
+refresh_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+open_run synth_1 -name synth_1
+report_utilization -file C:/Users/horowitj/Documents/Lab_6/alu_functional_report.txt -name utilization_1
+set_property top alu_s [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+close_design
+open_run synth_1 -name synth_1
+report_utilization -file C:/Users/horowitj/Documents/Lab_6/alu_structural_report.txt -name utilization_2

@@ -1,0 +1,64 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  8 19:27:10 2021
+# Process ID: 7948
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11620 C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\lab_8.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.xpr
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv
+update_compile_order -fileset sources_1
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+set_property top tbird [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv
+update_compile_order -fileset sim_1
+launch_runs impl_1 -jobs 2
+wait_on_run impl_1
+launch_simulation
+source turnsignal_tb.tcl
+set_property top tbird_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+close_sim
+launch_simulation
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+wait_on_run synth_1
+launch_simulation
+source tbird_tb.tcl
+close_sim
+launch_simulation
+source tbird_tb.tcl
+close_sim
+launch_simulation
+source tbird_tb.tcl
+close_sim
+launch_simulation
+source tbird_tb.tcl
+close_sim
+launch_simulation
+source tbird_tb.tcl
+close_sim
+launch_simulation
+source tbird_tb.tcl
+close_sim

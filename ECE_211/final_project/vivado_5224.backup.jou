@@ -1,0 +1,70 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov 21 13:51:40 2021
+# Process ID: 5224
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10820 C:\Users\fowlersp\Documents\ECE_211\final_project\final_project.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/final_project/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source pulse_cnt_tb.tcl
+close_sim
+launch_simulation
+source pulse_cnt_tb.tcl
+close_sim
+launch_simulation -mode post-synthesis -type functional
+launch_simulation
+source pulse_cnt_tb.tcl
+close_sim
+launch_simulation
+source pulse_cnt_tb.tcl
+close_sim
+launch_simulation
+source pulse_cnt_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top single_pulser_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+launch_simulation
+source single_pulser_tb.tcl
+close_sim
+launch_simulation
+source single_pulser_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top pulse_cnt_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source pulse_cnt_tb.tcl
+close_sim
+launch_simulation
+source pulse_cnt_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top heart_rate_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source heart_rate_top_tb.tcl
+close_sim

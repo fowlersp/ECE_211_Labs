@@ -1,0 +1,823 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Thu Dec  2 09:04:34 2021
+# Process ID: 1916
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9032 C:\Users\fowlersp\Documents\ECE_211\final_project\final_project.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/final_project/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:30 ; elapsed = 00:00:21 . Memory (MB): peak = 1070.852 ; gain = 0.000
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 09:10:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 09:10:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:02 ; elapsed = 00:00:15 . Memory (MB): peak = 1076.051 ; gain = 5.199
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+open_hw_target: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2619.562 ; gain = 1543.512
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 09:23:59 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 09:23:59 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+ERROR: [Labtoolstcl 44-513] HW Target shutdown. Closing target: localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2969.625 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+open_run: Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 2969.625 ; gain = 314.977
+INFO: [Common 17-344] 'open_run' was cancelled
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+INFO: [Labtools 27-1435] Device xc7a100t (JTAG device index = 0) is not programmed (DONE status = 0).
+WARNING: [Labtoolstcl 44-129] No matching hw_ila_data was found.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'thousands' might have multiple concurrent drivers [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 128 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:00:05 . Memory (MB): peak = 3009.734 ; gain = 25.430
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:11 . Memory (MB): peak = 3009.734 ; gain = 38.945
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3823] variable 'thousands' might have multiple concurrent drivers [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv:45]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 128 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 3042.984 ; gain = 18.887
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 128 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:10 . Memory (MB): peak = 3046.270 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 128 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 3072.078 ; gain = 12.715
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 09:37:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 09:37:17 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 3074.387 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+add_files -norecurse C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/mux_8_1.sv
+update_compile_order -fileset sources_1
+step
+Stopped at time : 130 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 33
+add_files -norecurse C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/dec_3_8.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:12:47 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:12:47 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:12 . Memory (MB): peak = 3083.766 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:17:48 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+reset_run impl_1 -prev_step 
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:20:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:20:55 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 3089.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.021 . Memory (MB): peak = 3759.078 ; gain = 0.000
+open_run: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 3759.078 ; gain = 669.949
+INFO: [Common 17-344] 'open_run' was cancelled
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 3759.078 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:25:32 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:25:32 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:32:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:32:17 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+close_hw_manager
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:35:39 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:35:39 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:40:37 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:40:37 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:13 . Memory (MB): peak = 3759.078 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 10:47:52 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+[Thu Dec  2 10:47:52 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Thu Dec  2 11:07:55 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 2
+[Thu Dec  2 11:09:08 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_run impl_1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 3759.078 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 19 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 3781.324 ; gain = 0.000
+INFO: [Common 17-344] 'open_run' was cancelled
+launch_runs impl_1 -to_step write_bitstream -jobs 2
+[Thu Dec  2 11:10:53 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 10:01:48
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:01 ; elapsed = 00:00:13 . Memory (MB): peak = 3781.324 ; gain = 0.000
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210292AE241BA
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+current_hw_device [get_hw_devices xc7a100t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a100t_0]
+set_property PROGRAM.FILE {C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/impl_1/project_top.bit} [get_hw_devices xc7a100t_0]
+program_hw_devices [get_hw_devices xc7a100t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a100t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a100t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  2 11:13:49 2021...

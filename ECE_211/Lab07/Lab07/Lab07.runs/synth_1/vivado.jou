@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct 26 10:10:41 2021
+# Process ID: 4608
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Lab07.runs/synth_1
+# Command line: vivado.exe -log lab7_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source lab7_top.tcl
+# Log file: C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Lab07.runs/synth_1/lab7_top.vds
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Lab07.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source lab7_top.tcl -notrace

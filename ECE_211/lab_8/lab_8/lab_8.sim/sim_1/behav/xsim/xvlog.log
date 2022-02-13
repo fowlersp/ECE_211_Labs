@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb

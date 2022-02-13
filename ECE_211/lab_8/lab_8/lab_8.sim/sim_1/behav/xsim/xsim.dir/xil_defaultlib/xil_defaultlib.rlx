@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv,1636465586,systemVerilog,,C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv,,tbird,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/turnsignal.sv,1636417614,systemVerilog,,C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/traffic_tb.sv,,turnsignal,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv,1636420151,systemVerilog,,,,tbird_tb,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/traffic_tb.sv,1636417614,systemVerilog,,,,turnsignal_tb,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/glbl.v,1636417612,verilog,,,,glbl,,uvm,,,,,,

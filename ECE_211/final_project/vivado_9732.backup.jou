@@ -1,0 +1,139 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov 21 19:25:36 2021
+# Process ID: 9732
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7200 C:\Users\fowlersp\Documents\ECE_211\final_project\final_project.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/final_project/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.mem
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top add3_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source add3_tb.tcl
+close_sim
+launch_simulation
+source add3_tb.tcl
+close_sim
+launch_simulation
+source add3_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv
+update_compile_order -fileset sim_1
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb_tv.mem w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb_tv.mem
+launch_simulation
+source add3_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top average_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source average_tb.tcl
+close_sim
+launch_simulation
+source average_tb.tcl
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.mem
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top binary_to_bcd_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source binary_to_bcd_tb.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top heart_rate_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_project
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+source heart_rate_top_tb.tcl
+close_sim
+launch_simulation
+source heart_rate_top_tb.tcl
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v
+update_compile_order -fileset sim_1
+close_sim
+export_ip_user_files -of_objects  [get_files C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.sv
+update_compile_order -fileset sim_1
+launch_simulation
+source heart_rate_top_tb.tcl
+current_wave_config {Untitled 10}
+add_wave {{/heart_rate_top_tb/DUV/dc/q}} 
+current_wave_config {Untitled 10}
+add_wave {{/heart_rate_top_tb/DUV/pc/cnt}} 
+current_wave_config {Untitled 10}
+add_wave {{/heart_rate_top_tb/DUV/r1/d}} 
+restart
+run all
+current_wave_config {Untitled 10}
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+run all
+close_sim
+launch_simulation
+source heart_rate_top_tb.tcl
+current_wave_config {Untitled 11}
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+run all
+close_sim
+launch_simulation
+source heart_rate_top_tb.tcl
+current_wave_config {Untitled 12}
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+run all
+close_sim
+launch_simulation
+source heart_rate_top_tb.tcl
+current_wave_config {Untitled 13}
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+run all
+close_sim

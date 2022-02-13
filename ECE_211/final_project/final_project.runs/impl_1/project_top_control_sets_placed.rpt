@@ -1,0 +1,91 @@
+Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2020.2 (win64) Build 3064766 Wed Nov 18 09:12:45 MST 2020
+| Date         : Tue Dec  7 08:04:25 2021
+| Host         : ECE419-92QT0Q2 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file project_top_control_sets_placed.rpt
+| Design       : project_top
+| Device       : xc7a100t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    13 |
+|    Minimum number of control sets                        |    13 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    53 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    13 |
+| >= 0 to < 4        |     3 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              12 |            7 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              63 |           21 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              56 |           16 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++--------------------------------------+-------------------------+-----------------------------------+------------------+----------------+--------------+
+|             Clock Signal             |      Enable Signal      |          Set/Reset Signal         | Slice Load Count | Bel Load Count | Bels / Slice |
++--------------------------------------+-------------------------+-----------------------------------+------------------+----------------+--------------+
+|  rtop/r_fsm/rs_en                    |                         | mode_IBUF                         |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG                       |                         |                                   |                2 |              2 |         1.00 |
+|  rtop/r_fsm/color_rgb_reg[2]_i_2_n_0 |                         |                                   |                1 |              3 |         3.00 |
+|  clkdiv_BUFG                         | htop/pc/db/carry        | htop/pc/db/pb_edge                |                1 |              5 |         5.00 |
+|  clkdiv_BUFG                         | htop/pc/sp/dq1_reg_0[0] | htop/pc/sp/SR[0]                  |                1 |              6 |         6.00 |
+|  clkdiv_BUFG                         |                         |                                   |                4 |              7 |         1.75 |
+|  clkdiv_BUFG                         |                         | rst_IBUF                          |                5 |             11 |         2.20 |
+|  clkdiv_BUFG                         |                         | htop/dc/q[0]_i_1__0_n_0           |                4 |             13 |         3.25 |
+|  clkdiv_BUFG                         |                         | rtop/r_fsm/clear                  |                4 |             13 |         3.25 |
+|  clkdiv_BUFG                         | rtop/r_fsm/start_wait5  | rtop/dc/q[0]_i_1__2_n_0           |                4 |             13 |         3.25 |
+|  clkdiv_BUFG                         | rtop/r_fsm/Q[0]         | rtop/r_fsm/FSM_onehot_ps_reg[1]_0 |                4 |             14 |         3.50 |
+|  clkdiv_BUFG                         | htop/dc/E[0]            | rst_IBUF                          |                6 |             18 |         3.00 |
+|  clk_IBUF_BUFG                       |                         | clkd/q[25]_i_1_n_0                |                7 |             25 |         3.57 |
++--------------------------------------+-------------------------+-----------------------------------+------------------+----------------+--------------+
+
+

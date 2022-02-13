@@ -1,0 +1,1124 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov 21 19:25:36 2021
+# Process ID: 9732
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7200 C:\Users\fowlersp\Documents\ECE_211\final_project\final_project.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/final_project/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:21 ; elapsed = 00:00:11 . Memory (MB): peak = 1088.789 ; gain = 0.000
+update_compile_order -fileset sources_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/add_tb.sv
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.mem
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv
+update_compile_order -fileset sim_1
+set_property top add3_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj add3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3091] actual bit length 6 differs from formal bit length 7 for port 's' [C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv:40]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/add3_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/add3_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Nov 21 19:45:13 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 19:45:13 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.789 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_tb_behav -key {Behavioral:sim_1:Functional:add3_tb} -tclbatch {add3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source add3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/add3_tb/testvectors" to the wave window because it has 190019 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+Error: input a = 000000
+ outputs: y = xxxxxx (expected y = 0000000)
+Error: input a = 000001
+ outputs: y = xxxxxx (expected y = 0000010)
+Error: input a = 000010
+ outputs: y = xxxxxx (expected y = 0000100)
+Error: input a = 000011
+ outputs: y = xxxxxx (expected y = 0000110)
+Error: input a = 000100
+ outputs: y = xxxxxx (expected y = 0001000)
+Error: input a = 100000
+ outputs: y = xxxxxx (expected y = 0100101)
+Error: input a = 100001
+ outputs: y = xxxxxx (expected y = 0100111)
+Error: input a = 101000
+ outputs: y = xxxxxx (expected y = 0101111)
+Error: input a = 100011
+ outputs: y = xxxxxx (expected y = 1000011)
+Error: input a = 100100
+ outputs: y = xxxxxx (expected y = 1000101)
+        10 tests completed with         10 errors
+$stop called at time : 115 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1103.117 ; gain = 14.328
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1103.117 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj add3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_tb_behav -key {Behavioral:sim_1:Functional:add3_tb} -tclbatch {add3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source add3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/add3_tb/testvectors" to the wave window because it has 190019 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+Error: input a = 000000
+ outputs: y = 0xxxxxx (expected y = 0000000)
+Error: input a = 000001
+ outputs: y = xxxxxxx (expected y = 0000010)
+Error: input a = 000010
+ outputs: y = xxxxxxx (expected y = 0000100)
+Error: input a = 000011
+ outputs: y = xxxxxxx (expected y = 0000110)
+Error: input a = 000100
+ outputs: y = xxxxxxx (expected y = 0001000)
+Error: input a = 100000
+ outputs: y = xxxxxxx (expected y = 0100101)
+Error: input a = 100001
+ outputs: y = xxxxxxx (expected y = 0100111)
+Error: input a = 101000
+ outputs: y = xxxxxxx (expected y = 0101111)
+Error: input a = 100011
+ outputs: y = xxxxxxx (expected y = 1000011)
+Error: input a = 100100
+ outputs: y = xxxxxxx (expected y = 1000101)
+        10 tests completed with         10 errors
+$stop called at time : 115 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1103.117 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj add3_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add3_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot add3_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_tb_behav -key {Behavioral:sim_1:Functional:add3_tb} -tclbatch {add3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source add3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/add3_tb/testvectors" to the wave window because it has 190019 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+        10 tests completed with          0 errors
+$stop called at time : 115 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1103.305 ; gain = 0.188
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb_tv.mem w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb_tv.mem
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'add3_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj add3_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot add3_tb_behav xil_defaultlib.add3_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "add3_tb_behav -key {Behavioral:sim_1:Functional:add3_tb} -tclbatch {add3_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source add3_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/add3_tb/testvectors" to the wave window because it has 190019 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+        10 tests completed with          0 errors
+$stop called at time : 115 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv" Line 86
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'add3_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1127.289 ; gain = 20.695
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top average_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'average_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj average_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot average_tb_behav xil_defaultlib.average_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot average_tb_behav xil_defaultlib.average_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.average_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot average_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/average_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/average_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Nov 21 19:59:29 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 116.402 ; gain = 17.656
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 19:59:29 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:10 . Memory (MB): peak = 1128.105 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '10' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "average_tb_behav -key {Behavioral:sim_1:Functional:average_tb} -tclbatch {average_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source average_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/average_tb/testvectors" to the wave window because it has 160016 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+         5 tests completed with          0 errors
+$stop called at time : 65 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'average_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1139.930 ; gain = 11.824
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1140.711 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'average_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj average_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot average_tb_behav xil_defaultlib.average_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot average_tb_behav xil_defaultlib.average_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "average_tb_behav -key {Behavioral:sim_1:Functional:average_tb} -tclbatch {average_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source average_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/average_tb/testvectors" to the wave window because it has 160016 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+         6 tests completed with          0 errors
+$stop called at time : 75 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/average_tb.sv" Line 84
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'average_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1140.711 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.mem
+add_files -fileset sim_1 -norecurse C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv
+update_compile_order -fileset sim_1
+set_property top binary_to_bcd_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'binary_to_bcd_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj binary_to_bcd_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot binary_to_bcd_tb_behav xil_defaultlib.binary_to_bcd_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot binary_to_bcd_tb_behav xil_defaultlib.binary_to_bcd_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.binary_to_bcd_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot binary_to_bcd_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/binary_to_bcd_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 116.352 ; gain = 23.516
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 20:05:51 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:14 . Memory (MB): peak = 1147.871 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '14' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "binary_to_bcd_tb_behav -key {Behavioral:sim_1:Functional:binary_to_bcd_tb} -tclbatch {binary_to_bcd_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source binary_to_bcd_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: [Wavedata 42-489] Can't add object "/binary_to_bcd_tb/testvectors" to the wave window because it has 200020 bits, which exceeds the display limit of 65536 bits.  To change the display limit, use the command "set_property display_limit <new limit> [current_wave_config]".
+# run 1000ns
+starting up testbench...
+        12 tests completed with          0 errors
+$stop called at time : 135 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv" Line 99
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'binary_to_bcd_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:19 . Memory (MB): peak = 1162.336 ; gain = 14.465
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1163.906 ; gain = 0.000
+set_property top heart_rate_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_project
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1168.961 ; gain = 2.520
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 94 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 94
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1169.387 ; gain = 0.426
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+export_ip_user_files -of_objects  [get_files C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/delay_counter_tb.sv
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 94 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 94
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1172.121 ; gain = 2.734
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/heart_rate_top_tb/DUV/dc/q}} 
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/heart_rate_top_tb/DUV/pc/cnt}} 
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/heart_rate_top_tb/DUV/r1/d}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$stop called at time : 94 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 94
+current_wave_config {Untitled 10}
+Untitled 10
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$stop called at time : 94 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 94
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 94 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 94
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1175.125 ; gain = 0.523
+current_wave_config {Untitled 11}
+Untitled 11
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$stop called at time : 94 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 94
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 117 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1184.766 ; gain = 9.641
+current_wave_config {Untitled 12}
+Untitled 12
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$stop called at time : 117 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/add3_tb.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/average_tb_tv.mem'
+INFO: [SIM-utils-43] Exported 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/binary_to_bcd_tb.mem'
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 128 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1184.895 ; gain = 0.000
+current_wave_config {Untitled 13}
+Untitled 13
+add_wave {{/heart_rate_top_tb/DUV/dc/delay_done}} 
+restart
+INFO: [Simtcl 6-17] Simulation restarted
+run all
+$stop called at time : 128 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 150
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 21 21:58:42 2021...

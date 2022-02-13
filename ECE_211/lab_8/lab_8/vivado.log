@@ -1,0 +1,632 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Mon Nov  8 19:27:10 2021
+# Process ID: 7948
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11620 C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\lab_8.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/horowitj/Documents/lab_8' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.gen/sources_1', nor could it be found using path 'C:/Users/horowitj/Documents/lab_8/lab_8.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:23 ; elapsed = 00:00:17 . Memory (MB): peak = 1088.805 ; gain = 0.000
+update_compile_order -fileset sources_1
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv w ]
+add_files C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv
+update_compile_order -fileset sources_1
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\RTL\tbird.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\RTL\turnsignal.sv:]
+ERROR: [Common 17-180] Spawn failed: No error
+copy_run -name impl_1_copy_1 [get_runs impl_1] -parent_run synth_1
+copy_run: Time (s): cpu = 00:00:10 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.805 ; gain = 0.000
+impl_1_copy_1
+set_property top tbird [current_fileset]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Nov  8 19:41:15 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.runs/synth_1/runme.log
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+Command: synth_design -rtl -rtl_skip_mlo -name rtl_1
+Starting synth_design
+Using part: xc7a100tcsg324-1
+Top: tbird
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1620.211 ; gain = 246.676
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'tbird' [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'tbird' (1#1) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1674.566 ; gain = 301.031
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1675.973 ; gain = 302.438
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1675.973 ; gain = 302.438
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1675.973 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1734.902 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:19 ; elapsed = 00:00:13 . Memory (MB): peak = 1826.898 ; gain = 453.363
+5 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:25 ; elapsed = 00:00:19 . Memory (MB): peak = 1826.898 ; gain = 738.094
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv
+update_compile_order -fileset sim_1
+launch_runs impl_1 -jobs 2
+[Mon Nov  8 19:51:58 2021] Launched impl_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.runs/impl_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'turnsignal_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj turnsignal_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/turnsignal.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module turnsignal
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/traffic_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module turnsignal_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot turnsignal_tb_behav xil_defaultlib.turnsignal_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot turnsignal_tb_behav xil_defaultlib.turnsignal_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.turnsignal
+Compiling module xil_defaultlib.turnsignal_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot turnsignal_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/xsim.dir/turnsignal_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/xsim.dir/turnsignal_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov  8 19:53:39 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov  8 19:53:39 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 1854.312 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "turnsignal_tb_behav -key {Behavioral:sim_1:Functional:turnsignal_tb} -tclbatch {turnsignal_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source turnsignal_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 216 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/traffic_tb.sv" Line 40
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'turnsignal_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:11 ; elapsed = 00:00:14 . Memory (MB): peak = 1900.102 ; gain = 45.789
+set_property top tbird_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\RTL\tbird.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\Simulation\tbird_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\Simulation\traffic_tb.sv:]
+WARNING: [filemgmt 56-199] Attempt to get parsing info during refresh. "On-the-fly" syntax checking information may be incorrect. [C:\Users\fowlersp\Documents\ECE_211\lab_8\lab_8\RTL\turnsignal.sv:]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+boost::filesystem::remove: The process cannot access the file because it is being used by another process: "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/simulate.log"
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:05 ; elapsed = 00:00:08 . Memory (MB): peak = 1902.574 ; gain = 2.473
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2996] 'rc' is not found for implicit .name port connection [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+close_design
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Nov  8 19:55:17 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+ERROR: [VRFC 10-2996] 'rc' is not found for implicit .name port connection [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv:27]
+ERROR: [XSIM 43-3322] Static elaboration of top level Verilog design unit(s) in library work failed.
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-99] Step results log file:'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/elaborate.log'
+ERROR: [USF-XSim-62] 'elaborate' step failed with error(s). Please check the Tcl console output or 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/elaborate.log' file for more information.
+ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
+ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+[Mon Nov  8 19:58:35 2021] Launched synth_1...
+Run output will be captured here: C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.runs/synth_1/runme.log
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/xsim.dir/tbird_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim/xsim.dir/tbird_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Mon Nov  8 19:59:28 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov  8 19:59:28 2021...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1902.840 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 76 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:10 . Memory (MB): peak = 1902.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1902.840 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 116 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" Line 68
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:03 ; elapsed = 00:00:07 . Memory (MB): peak = 1902.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 136 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" Line 74
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1902.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 146 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" Line 78
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1902.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 156 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" Line 80
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1902.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'tbird_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj tbird_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tbird_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+"xelab -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 89a82a56c6f54557813e63778cc43e62 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tbird_tb_behav xil_defaultlib.tbird_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3291] enum literal 'Idle' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:27]
+WARNING: [VRFC 10-3291] enum literal 'l1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:28]
+WARNING: [VRFC 10-3291] enum literal 'l2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:29]
+WARNING: [VRFC 10-3291] enum literal 'l3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:30]
+WARNING: [VRFC 10-3291] enum literal 'r1' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:31]
+WARNING: [VRFC 10-3291] enum literal 'r2' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:32]
+WARNING: [VRFC 10-3291] enum literal 'r3' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:33]
+WARNING: [VRFC 10-3291] enum literal 'lr' width (3) must match enum width (4) [C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/RTL/tbird.sv:34]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.tbird
+Compiling module xil_defaultlib.tbird_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tbird_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/lab_8.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tbird_tb_behav -key {Behavioral:sim_1:Functional:tbird_tb} -tclbatch {tbird_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source tbird_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 156 ns : File "C:/Users/fowlersp/Documents/ECE_211/lab_8/lab_8/Simulation/tbird_tb.sv" Line 79
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tbird_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1902.840 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  8 20:10:47 2021...

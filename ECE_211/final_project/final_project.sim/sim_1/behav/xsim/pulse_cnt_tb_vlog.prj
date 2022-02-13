@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../RTL/debounce.sv" \
+"../../../../RTL/pulse_cnt.sv" \
+"../../../../RTL/single_pulser.sv" \
+"../../../../Simulation/pulse_cnt_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

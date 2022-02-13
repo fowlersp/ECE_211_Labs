@@ -1,0 +1,26 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add3
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_6
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module add_7
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module adder
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module average
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module binary_to_bcd
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module delay_counter
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module register
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module heart_rate_top_tb

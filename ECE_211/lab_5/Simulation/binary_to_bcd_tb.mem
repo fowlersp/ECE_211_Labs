@@ -1,0 +1,18 @@
+// testvector file for binary_to_bcd
+// Each line contains one testvector in binary format
+// Underscore characters are spacers that separate fields for readability
+00_000
+01_001
+16_022
+21_033
+2C_044
+37_055
+42_066
+4D_077
+58_088
+63_099
+6E_110
+DC_220
+
+
+

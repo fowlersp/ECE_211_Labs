@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../RTL/add3.sv" \
+"../../../../RTL/add_6.sv" \
+"../../../../RTL/add_7.sv" \
+"../../../../RTL/adder.sv" \
+"../../../../RTL/average.sv" \
+"../../../../RTL/binary_to_bcd.sv" \
+"../../../../RTL/debounce.sv" \
+"../../../../RTL/delay_counter.sv" \
+"../../../../RTL/heart_rate_top.sv" \
+"../../../../RTL/pulse_cnt.sv" \
+"../../../../RTL/register.sv" \
+"../../../../RTL/single_pulser.sv" \
+"../../../../Simulation/heart_rate_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

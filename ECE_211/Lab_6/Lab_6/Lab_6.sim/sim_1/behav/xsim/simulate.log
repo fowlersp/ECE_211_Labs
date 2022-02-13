@@ -1,0 +1,5 @@
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+starting up testbench...
+        21 tests completed with          0 errors
+$stop called at time : 225 ns : File "C:/Users/horowitj/Documents/Lab_6/Simulation/alu_s_tb.sv" Line 92

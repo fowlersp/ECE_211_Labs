@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Dec  7 08:02:23 2021
+# Process ID: 15184
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1
+# Command line: vivado.exe -log project_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_top.tcl
+# Log file: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/project_top.vds
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source project_top.tcl -notrace
+Command: synth_design -top project_top -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 10464
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1140.445 ; gain = 57.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'project_top' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/project_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'clkdiv' [C:/Users/fowlersp/Documents/ECE_211/Lab 07/clkdiv.sv:30]
+	Parameter DIVFREQ bound to: 1000 - type: integer 
+	Parameter DIVBITS bound to: 26 - type: integer 
+	Parameter CLKFREQ bound to: 100000000 - type: integer 
+	Parameter DIVAMT bound to: 50000 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'clkdiv' (1#1) [C:/Users/fowlersp/Documents/ECE_211/Lab 07/clkdiv.sv:30]
+INFO: [Synth 8-6157] synthesizing module 'heart_rate_top' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'delay_counter' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv:24]
+	Parameter DELAY_LIMIT bound to: 5000 - type: integer 
+	Parameter DELAY_WIDTH bound to: 13 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'delay_counter' (2#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/delay_counter.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'pulse_cnt' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv:23]
+	Parameter CLKFREQ bound to: 1000 - type: integer 
+	Parameter DEBOUNCE_MS bound to: 10 - type: integer 
+	Parameter CTRBITS bound to: 4 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'debounce' (3#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'single_pulser' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'single_pulser' (4#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'pulse_cnt' (5#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'register' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'register' (6#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/register.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'add_6' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'adder' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'adder' (7#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/adder.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_6' (8#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_6.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'add_7' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'add_7' (9#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add_7.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'average' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'average' (10#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/average.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'binary_to_bcd' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'add3' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'add3' (11#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/add3.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'binary_to_bcd' (12#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/binary_to_bcd.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'heart_rate_top' (13#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/heart_rate_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'reaction_timer_top' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/reaction_timer_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'reaction_fsm' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/reaction_fsm.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'reaction_fsm' (14#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/reaction_fsm.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'rgb_control' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/rgb_control.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'rgb_control' (15#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/rgb_control.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'time_cnt' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/time_cnt.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'time_cnt' (16#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/time_cnt.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'random_wait' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/random_wait.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'random_wait' (17#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/random_wait.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'reaction_timer_top' (18#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/reaction_timer_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mode_select' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/mode_select.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'mode_select' (19#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/mode_select.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'seven_seg_top' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/seven_seg_top.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'mux_8_1' [C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/mux_8_1.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/mux_8_1.sv:27]
+INFO: [Synth 8-6155] done synthesizing module 'mux_8_1' (20#1) [C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/mux_8_1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'dec_3_8' [C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/dec_3_8.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'dec_3_8' (21#1) [C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/dec_3_8.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'sevenseg_hex' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/sevenseg_hex.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sevenseg_hex' (22#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/sevenseg_hex.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'seven_seg_top' (23#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/seven_seg_top.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'project_top' (24#1) [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/project_top.sv:23]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 1194.484 ; gain = 111.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1194.484 ; gain = 111.762
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1194.484 ; gain = 111.762
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1194.484 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/fowlersp/Documents/ECE_211/final_project/Constraint/project_top.xdc]
+Finished Parsing XDC File [C:/Users/fowlersp/Documents/ECE_211/final_project/Constraint/project_top.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/fowlersp/Documents/ECE_211/final_project/Constraint/project_top.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/project_top_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/project_top_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1310.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1310.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1310.043 ; gain = 227.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1310.043 ; gain = 227.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 1310.043 ; gain = 227.320
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'ps_reg' in module 'reaction_fsm'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  starts |                          0000001 |                              110
+                  wait_t |                          0000010 |                              001
+                 error_r |                          0000100 |                              010
+                 input_t |                          0001000 |                              011
+                 error_y |                          0010000 |                              100
+                output_d |                          0100000 |                              101
+                    Idle |                          1000000 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ps_reg' using encoding 'one-hot' in module 'reaction_fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'color_rgb_reg' [C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/reaction_fsm.sv:54]
+WARNING: [Synth 8-327] inferring latch for variable 'dp_reg' [C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/dec_3_8.sv:33]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 1310.043 ; gain = 227.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   26 Bit       Adders := 1     
+	   2 Input    6 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 1     
+	   2 Input    4 Bit       Adders := 1     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
+	   3 Input      1 Bit         XORs := 13    
++---Registers : 
+	               26 Bit    Registers := 1     
+	                6 Bit    Registers := 4     
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   2 Input   26 Bit        Muxes := 1     
+	   7 Input    7 Bit        Muxes := 1     
+	   2 Input    7 Bit        Muxes := 9     
+	   2 Input    4 Bit        Muxes := 4     
+	   4 Input    4 Bit        Muxes := 1     
+	   6 Input    4 Bit        Muxes := 1     
+	   7 Input    3 Bit        Muxes := 1     
+	   4 Input    3 Bit        Muxes := 1     
+	   7 Input    1 Bit        Muxes := 3     
+	   2 Input    1 Bit        Muxes := 10    
+	   5 Input    1 Bit        Muxes := 1     
+	   4 Input    1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1310.043 ; gain = 227.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1310.043 ; gain = 227.320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1313.625 ; gain = 230.902
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 1320.496 ; gain = 237.773
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     2|
+|2     |CARRY4 |    23|
+|3     |LUT1   |    11|
+|4     |LUT2   |    13|
+|5     |LUT3   |    13|
+|6     |LUT4   |    42|
+|7     |LUT5   |    36|
+|8     |LUT6   |    55|
+|9     |FDRE   |   125|
+|10    |FDSE   |     2|
+|11    |LD     |     3|
+|12    |LDP    |     1|
+|13    |IBUF   |     6|
+|14    |OBUF   |    19|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:30 ; elapsed = 00:00:41 . Memory (MB): peak = 1336.176 ; gain = 137.895
+Synthesis Optimization Complete : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1336.176 ; gain = 253.453
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 1348.258 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 27 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1348.258 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 4 instances were transformed.
+  LD => LDCE: 3 instances
+  LDP => LDPE: 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+66 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:00:54 . Memory (MB): peak = 1348.258 ; gain = 265.535
+INFO: [Common 17-1381] The checkpoint 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.runs/synth_1/project_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file project_top_utilization_synth.rpt -pb project_top_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Dec  7 08:03:27 2021...

@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Oct  5 10:47:58 2021
+# Process ID: 15852
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/lab_5/lab_5.runs/synth_1
+# Command line: vivado.exe -log binary_to_bcd.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source binary_to_bcd.tcl
+# Log file: C:/Users/fowlersp/Documents/ECE_211/lab_5/lab_5.runs/synth_1/binary_to_bcd.vds
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/lab_5/lab_5.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source binary_to_bcd.tcl -notrace

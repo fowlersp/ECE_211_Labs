@@ -1,0 +1,692 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Nov 21 13:51:40 2021
+# Process ID: 5224
+# Current directory: C:/Users/fowlersp/Documents/ECE_211/final_project
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent10820 C:\Users\fowlersp\Documents\ECE_211\final_project\final_project.xpr
+# Log file: C:/Users/fowlersp/Documents/ECE_211/final_project/vivado.log
+# Journal file: C:/Users/fowlersp/Documents/ECE_211/final_project\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:20 ; elapsed = 00:00:14 . Memory (MB): peak = 1088.352 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/pulse_cnt_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/pulse_cnt_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Nov 21 13:54:40 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 13:54:40 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.352 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+xsim: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 1088.352 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1088.352 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1088.352 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:00:08 . Memory (MB): peak = 1088.352 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation -mode post-synthesis -type functional
+Command: launch_simulation -mode post-synthesis -type functional
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Vivado 12-4705] 'export_ip_user_files' task aborted
+INFO: [Common 17-344] 'launch_simulation' was cancelled
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1088.352 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1097.371 ; gain = 9.020
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1109.297 ; gain = 11.926
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv w ]
+add_files -fileset sim_1 C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv
+update_compile_order -fileset sim_1
+set_property top single_pulser_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_pulser_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj single_pulser_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot single_pulser_tb_behav xil_defaultlib.single_pulser_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot single_pulser_tb_behav xil_defaultlib.single_pulser_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.single_pulser_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot single_pulser_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/single_pulser_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:11 . Memory (MB): peak = 116.363 ; gain = 17.586
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 14:10:45 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 1112.340 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '13' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "single_pulser_tb_behav -key {Behavioral:sim_1:Functional:single_pulser_tb} -tclbatch {single_pulser_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source single_pulser_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 21 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv" Line 51
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'single_pulser_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:19 . Memory (MB): peak = 1112.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:12 . Memory (MB): peak = 1112.340 ; gain = 0.000
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'single_pulser_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj single_pulser_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot single_pulser_tb_behav xil_defaultlib.single_pulser_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot single_pulser_tb_behav xil_defaultlib.single_pulser_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.single_pulser_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot single_pulser_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "single_pulser_tb_behav -key {Behavioral:sim_1:Functional:single_pulser_tb} -tclbatch {single_pulser_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source single_pulser_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 42 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/single_pulser_tb.sv" Line 65
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'single_pulser_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1112.340 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top pulse_cnt_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1152.992 ; gain = 38.547
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'pulse_cnt_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj pulse_cnt_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/debounce.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module debounce
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/pulse_cnt.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/RTL/single_pulser.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module single_pulser
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module pulse_cnt_tb
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot pulse_cnt_tb_behav xil_defaultlib.pulse_cnt_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.pulse_cnt_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot pulse_cnt_tb_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '1' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "pulse_cnt_tb_behav -key {Behavioral:sim_1:Functional:pulse_cnt_tb} -tclbatch {pulse_cnt_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source pulse_cnt_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/pulse_cnt_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'pulse_cnt_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1160.473 ; gain = 7.480
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property top heart_rate_top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'heart_rate_top_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -L uvm -prj heart_rate_top_tb_vlog.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+"xelab -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator 2020.2
+Copyright 1986-1999, 2001-2020 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2020.2/bin/unwrapped/win64.o/xelab.exe -wto 9ed52bac0384435c9adeaf851a94a906 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot heart_rate_top_tb_behav xil_defaultlib.heart_rate_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.delay_counter_default
+Compiling module xil_defaultlib.debounce_default
+Compiling module xil_defaultlib.single_pulser
+Compiling module xil_defaultlib.pulse_cnt
+Compiling module xil_defaultlib.register
+Compiling module xil_defaultlib.adder
+Compiling module xil_defaultlib.add_6
+Compiling module xil_defaultlib.add_7
+Compiling module xil_defaultlib.average
+Compiling module xil_defaultlib.add3
+Compiling module xil_defaultlib.binary_to_bcd
+Compiling module xil_defaultlib.heart_rate_top
+Compiling module xil_defaultlib.heart_rate_top_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot heart_rate_top_tb_behav
+
+****** Webtalk v2020.2 (64-bit)
+  **** SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+  **** IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/heart_rate_top_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim/xsim.dir/heart_rate_top_tb_behav/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sun Nov 21 14:20:45 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2020.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sun Nov 21 14:20:45 2021...
+run_program: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 1160.473 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '6' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/fowlersp/Documents/ECE_211/final_project/final_project.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "heart_rate_top_tb_behav -key {Behavioral:sim_1:Functional:heart_rate_top_tb} -tclbatch {heart_rate_top_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2020.2
+Time resolution is 1 ps
+source heart_rate_top_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$stop called at time : 52 ns : File "C:/Users/fowlersp/Documents/ECE_211/final_project/Simulation/heart_rate_top_tb.sv" Line 66
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'heart_rate_top_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:04 ; elapsed = 00:00:11 . Memory (MB): peak = 1171.516 ; gain = 11.043
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1171.516 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 21 14:23:11 2021...

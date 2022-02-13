@@ -1,0 +1,10 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/horowitj/Documents/Lab_6/Lab_6.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/horowitj/Documents/Lab_6/RTL/alu.sv,1634651080,systemVerilog,,C:/Users/horowitj/Documents/Lab_6/Simulation/alu_s_tb.sv,,alu,,uvm,,,,,,
+C:/Users/horowitj/Documents/Lab_6/RTL/mux4p.sv,1634647286,systemVerilog,,C:/Users/horowitj/Documents/Lab_6/Simulation/mux4p_tb.sv,,mux4p,,uvm,,,,,,
+C:/Users/horowitj/Documents/Lab_6/Simulation/alu_s_tb.sv,1634651526,systemVerilog,,,,alu_s_tb,,uvm,,,,,,
+C:/Users/horowitj/Documents/Lab_6/Simulation/alu_tb.sv,1634651104,systemVerilog,,,,alu_tb,,uvm,,,,,,
+C:/Users/horowitj/Documents/Lab_6/Simulation/mux4p_tb.sv,1634602844,systemVerilog,,,,mux4p_tb,,uvm,,,,,,

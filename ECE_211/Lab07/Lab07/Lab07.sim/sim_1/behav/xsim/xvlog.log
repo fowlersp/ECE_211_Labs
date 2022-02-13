@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/count_3bit.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_3bit
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Simulation/count_3bit_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module count_3bit_tb

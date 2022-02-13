@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/fowlersp/Documents/ECE_211/lab_5/RTL/binary_to_bcd.sv,1633445265,systemVerilog,,C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv,,binary_to_bcd,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3.sv,1633436311,systemVerilog,,C:/Users/fowlersp/Documents/ECE_211/lab_5/RTL/binary_to_bcd.sv,,add3,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/add3_tb.sv,1633437436,systemVerilog,,,,add3_tb,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_5/Simulation/binary_to_bcd_tb.sv,1633441570,systemVerilog,,,,binary_to_bcd_tb,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/lab_5/lab_5.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,

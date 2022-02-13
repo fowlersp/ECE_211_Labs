@@ -1,0 +1,9 @@
+0.7
+2020.2
+Nov 18 2020
+09:47:47
+C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Lab07.sim/sim_1/behav/xsim/glbl.v,1605673889,verilog,,,,glbl,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/count_2bit.sv,1635172302,systemVerilog,,C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Simulation/count_2bit_tb.sv,,count_2bit,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/RTL/count_3bit.sv,1635250749,systemVerilog,,C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Simulation/count_3bit_tb.sv,,count_3bit,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Simulation/count_2bit_tb.sv,1635172316,systemVerilog,,,,count_2bit_tb,,uvm,,,,,,
+C:/Users/fowlersp/Documents/ECE_211/Lab07/Lab07/Simulation/count_3bit_tb.sv,1635251587,systemVerilog,,,,count_3bit_tb,,uvm,,,,,,

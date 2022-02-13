@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../RTL/add3.sv" \
+"../../../../RTL/binary_to_bcd.sv" \
+"../../../../RTL/delay_counter.sv" \
+"../../../../RTL/random_wait.sv" \
+"../../../../RTL/reaction_fsm.sv" \
+"../../../../RTL/reaction_timer_top.sv" \
+"../../../../RTL/rgb_control.sv" \
+"../../../../RTL/time_cnt.sv" \
+"../../../../Simulation/reaction_timer_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

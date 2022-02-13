@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 28 11:02:52 2021
+# Process ID: 12096
+# Current directory: C:/Users/horowitj/Documents/lab_4/lab_4.runs/impl_1
+# Command line: vivado.exe -log lab4_toplevel.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab4_toplevel.tcl -notrace
+# Log file: C:/Users/horowitj/Documents/lab_4/lab_4.runs/impl_1/lab4_toplevel.vdi
+# Journal file: C:/Users/horowitj/Documents/lab_4/lab_4.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab4_toplevel.tcl -notrace
